@@ -1,5 +1,6 @@
 function about(){
     window.open('https://github.com/nikhilkanta2303/Alpha/blob/main/README.md');
+    window.location.reload();
 }
 
 function assist(){
