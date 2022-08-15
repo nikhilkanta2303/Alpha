@@ -15,7 +15,7 @@ function assist(){
     else if ('book bus' == comm || 'bbt' == comm){
         let from_plc = prompt('From Place: ');
         let to_plc = prompt('To place: ');
-        let b_tick = 'https://www.redbus.in/bus-tickets/'+from_plc+'-to-'+to_plc;
+        let b_tick = 'https://m.redbus.in/bus-tickets/'+from_plc+'-to-'+to_plc;
         window.open(b_tick);
         window.location.reload();
     }
