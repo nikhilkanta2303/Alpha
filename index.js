@@ -32,12 +32,6 @@ function assist(){
             window.location.reload();
         }, 5000);
     }
-
-
-    if (confirm("comm")) {
-        setTimeout(function(){
-            window.location.reload();
-        }, 5000);}
     else{
         return;
     }
