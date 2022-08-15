@@ -1,3 +1,7 @@
+function about(){
+    window.open('https://github.com/nikhilkanta2303/Alpha/blob/main/README.md');
+}
+
 function assist(){
     let comm = prompt('I will try to help you Ask Anything');
     if ('google' == comm || 'gg' == comm){
