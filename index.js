@@ -2,7 +2,14 @@ function about(){
     window.open('https://github.com/nikhilkanta2303/Alpha/blob/main/README.md');
     window.location.reload();
 }
-
+function clearpage(){
+    window.location.reload();
+}
+function popWindow(url, title, w, h) {
+    var left = (screen.width/2)-(w/2);
+    var top = (screen.height/2)-(h/2);
+    return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+}
 function assist(){
     let comm = prompt('I will try to help you Ask Anything');
     if ('google' == comm || 'gg' == comm){
@@ -37,7 +44,11 @@ function assist(){
             window.location.reload();
         }, 5000);
     }
+    else if (comm == null){
+        
+    }
     else{
-        return;
+        let result = 'http://api.wolframalpha.com/v1/result?appid=LGU5L4-EKG77964XA&i='+comm;
+        popWindow(result, 'Result', 350, 250);
     }
 }
