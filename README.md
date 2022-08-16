@@ -8,13 +8,13 @@ use the given keywords as it just like a chat bot
 6. 'amazon' --> 'enter the product name or category'
 7. It has an in built COMPUTING INTELLIGENCE Engine Api - WolpframAlpha, which help to answer any academic, knowledge queries.
 like :
-      -value of pi
-      -who is the president of us
-      -who is abdul kalam
-      -where is tajmahal
-      -any calculation
-      -any general knowledge question
-    * it is like a mini encyclopedia *
+* value of pi
+* who is the president of us
+* who is abdul kalam
+* where is tajmahal
+* any calculation
+* any general knowledge question
+* it is like a mini encyclopedia
 9. 'yt' or 'youtube' --> 'enter the keyword related to content in youtube'
 10. 'song' --> 'enter the song or movie name to redirect to that song page'
 11. Alpha has a live time widget with seconds timer on the home page
