@@ -48,7 +48,38 @@ function assist(){
             let yt_srch = prompt('   Search the video keywords: ');
             utb = yt_srch.replace(' ', '+');
             window.open('https://www.youtube.com/results?search_query='+utb)}
+
+    else if ('flipkart' == comm || 'fkart' == comm){
+        let fk_srch = prompt('   Product Name: ');
+        let fpd = fk_srch.replace(' ','+');
+        let p_link = 'https://www.flipkart.com/search?q='+fpd;
+        window.open(p_link)}
+
+    else if ('amazon' == comm || 'amz' == comm){
+        let am_srch = prompt('   Product Name: ');
+        let pr_a = am_srch.replace(' ', '+');
+        window.open('https://www.amazon.in/s?k='+pr_a)}
+    
+    else if ('food delivery' == comm || 'fd' == comm){
+    window.alert('Use fd instead of typing "food delivery"')
+    let food_opt = prompt('Zomato --- 1 | Swiggy --- 2 | Enter your Response: ')
+        if (food_opt == '1'){
+            let place_f = prompt('   Place: ')
+            let food_i = prompt('   Item Name: ')
+            let order_food = 'https://www.zomato.com/'+place_f+'/restaurants/'+food_i
+            window.open(order_food)}
+        else if (food_opt == '2'){
+            let sgy_i = prompt('   Enter the Item name: ')
+            let sgy_item = sgy_i.replace(' ', '+')
+            let sgy_odr = 'https://www.swiggy.com/'+'search?q='+sgy_item
+            window.open(sgy_odr)}
+        else{
+            window.alert('Sorry i cannot get your response; please try again by entering correct option')}}
+    
     else if (comm == null){
+        
+    }
+    else if (comm == ''){
         
     }
     else{
@@ -56,3 +87,33 @@ function assist(){
         popWindow(result, 'Result', 350, 250);
     }
 }
+/* ---------------------------------------------------------------- */
+function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+
+showTime();
