@@ -44,6 +44,10 @@ function assist(){
             window.location.reload();
         }, 5000);
     }
+    else if ('youtube' == comm || 'yt' == comm || 'youtube video' == comm){
+            let yt_srch = prompt('   Search the video keywords: ');
+            utb = yt_srch.replace(' ', '+');
+            window.open('https://www.youtube.com/results?search_query='+utb)}
     else if (comm == null){
         
     }
