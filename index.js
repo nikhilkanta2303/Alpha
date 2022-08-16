@@ -74,7 +74,7 @@ function assist(){
     else if ('song' == comm){
         let s_srch = prompt('    Enter the song name: ')
         let son = s_srch.replace(' ', '+')
-        let s_lin = 'https://wynk.in/music/detailsearch/'+son+'?q='+son
+        let s_lin = 'https://music.youtube.com/search?q='+son
         window.open(s_lin)}
 
     else if ('mail' == comm || 'gmail' == comm){
